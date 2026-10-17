@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "updated": "2026-10-17T00:00:00Z",
   "apps": [
-    { "repo": "yourname/echo-ps-saves" },
-    { "repo": "yourname/echo-ps-playtime" },
-    { "repo": "yourname/echo-ps-collection" },
-    { "repo": "yourname/echo-ps-system" }
+    { "repo": "saintcpmshop-source/echo-ps-saves" },
+    { "repo": "saintcpmshop-source/echo-ps-playtime" },
+    { "repo": "saintcpmshop-source/echo-ps-collection" },
+    { "repo": "saintcpmshop-source/echo-ps-system" }
   ]
 }
