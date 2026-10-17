@@ -1,1 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#0B0614"/>
+      <stop offset="50%" stop-color="#1A0B2E"/>
+      <stop offset="100%" stop-color="#2A1247"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#B8860B"/>
+      <stop offset="35%"  stop-color="#FFD700"/>
+      <stop offset="50%"  stop-color="#FFF3B0"/>
+      <stop offset="65%"  stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
 
+  <rect width="1200" height="260" fill="url(#bg)"/>
+
+  <!-- subtle animated stars -->
+  <g fill="#C9A9FF" opacity="0.5">
+    <circle cx="120" cy="40" r="1.6"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="70" r="1.6"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="200" r="1.4"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="220" r="1.4"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ECHO PS wordmark -->
+  <text x="600" y="130" text-anchor="middle"
+        font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="96" font-weight="800" letter-spacing="8"
+        fill="url(#gold)" filter="url(#glow)">ECHO PS</text>
+
+  <!-- tagline -->
+  <text x="600" y="185" text-anchor="middle"
+        font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="22" letter-spacing="6" fill="#E9D8FF" opacity="0.9">
+    INSTALL ONCE. ECHO FOREVER.
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- gold underline shimmer -->
+  <rect x="360" y="205" width="480" height="3" fill="url(#gold)">
+    <animate attributeName="width" values="0;480;0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="600;360;600" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
