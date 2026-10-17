@@ -1,6 +1,6 @@
 {
   "usb_path": "/media/user/PS3USB",
-  "store_index_url": "https://raw.githubusercontent.com/yourname/echo-ps/main/store/index.json",
+  "store_index_url": "https://raw.githubusercontent.com/saintcpmshop-source/echo-ps/main/store/index.json",
   "github_token": "",
   "poll_seconds": 2
 }
