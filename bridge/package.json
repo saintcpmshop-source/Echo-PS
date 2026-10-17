@@ -1,0 +1,11 @@
+{
+  "name": "echo-ps-bridge",
+  "version": "1.2.8",
+  "description": "Echo PS Bridge — fulfills PS3 install requests from GitHub Releases",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "SEE LICENSE IN ../LICENSE",
+  "dependencies": {
+    "axios": "^1.7.0"
+  }
+}
