@@ -1,0 +1,12 @@
+*.o
+*.elf
+*.self
+*.pkg
+*.bin
+build/
+dist/
+node_modules/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
